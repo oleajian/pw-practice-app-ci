@@ -51,3 +51,9 @@ test('Date Range picker test', async({page}) =>{
      
 
 })
+
+test.only('testing with argos CI', async({page}) =>{
+     const pm = new PageManager(page)
+     await pm.navigateTo().datepickerPage()
+    
+})
